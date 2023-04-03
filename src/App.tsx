@@ -1,13 +1,14 @@
 import React, { useCallback } from "react";
+//import { Routes, Route } from 'react-router-dom';
 import Particles from "react-particles";
 import type { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
-import { BrowserRouter, Route } from 'react-router-dom';
+//import {Navbar} from './pages/Nav/Navbar'
 import logo from "./logo.svg";
 import './App.css';
 import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles-engine";
-import Home from './Home';
+//import Home from './pages/Home';
 
 function App() {
     const particlesInit = useCallback(async (engine: Engine) => {
@@ -21,10 +22,10 @@ function App() {
                 <img src={logo} className="App-logo" alt="logo"/>
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
+                    <button></button>
                 </p>
-                <BrowserRouter>
-        <Route  path="/" Component={Home} />
-        </BrowserRouter>
+             
+           
                 
                 <p>
                     Edit <code>src/particles.json</code> to customize Particles, then save to reload.
