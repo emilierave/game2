@@ -6,8 +6,8 @@ import logo from "./logo.svg";
 import './App.css';
 import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles-engine";
-import Tictactoe from "./Tictactoe";
-import {BrowserRouter as Router,Routes, Route,} from "react-router-dom";
+import Game from "./Tictactoe";
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -23,18 +23,7 @@ function App() {
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
-                <Router>
         
-        <div className="container">
-        <Routes>
-            <Route path="/" element={<Tictactoe />} />
-    
-        </Routes>
-        </div>
-      </Router>
-            <div>
-            <Tictactoe/>
-            </div>      
                 <p>
                     Edit <code>src/particles.json</code> to customize Particles, then save to reload.
                 </p>
